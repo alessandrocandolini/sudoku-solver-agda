@@ -2,8 +2,8 @@
 
 # sudoku-solver-agda
 
-Agda implementation of a simple Sudoku solver using equational reasoning in the spirit of [Richard Bird](https://en.wikipedia.org/wiki/Richard_Bird_(computer_scientist)) see
-* https://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf)
+Agda implementation of a simple Sudoku solver using equational reasoning in the spirit of Richard Bird. See Bird's original paper for an Haskell implementation: 
+* https://www.cs.tufts.edu/~nr/cs257/archive/richard-bird/sudoku.pdf
 
 ## Compile
 
