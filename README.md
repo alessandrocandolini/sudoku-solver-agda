@@ -1,3 +1,5 @@
+[![CI](https://github.com/alessandrocandolini/sudoku-solver-agda/actions/workflows/ci.yml/badge.svg)](https://github.com/alessandrocandolini/sudoku-solver-agda/actions/workflows/ci.yml)
+
 # sudoku-solver-agda
 
 ## Compile
