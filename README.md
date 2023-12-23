@@ -8,7 +8,7 @@ Agda implementation of a simple Sudoku solver using equational reasoning in the 
 ## Why Agda
 
 My personal interest in exploring how to port Bird's ideas to Agda steams from two main reasons:
-* I've always been dissatisfied with the unprecise signatures and type modelling used in the original solution. For example, Bird's solution in Haskell uses generic lists of lists `[[a]]` to represent the grid (leaving room for inconsistent number of lines and columns), it employs `Char` to represent the content (leaving open the possibility to have all sort of alphanumeric content in each cell), the signature of the method to solve the Sudoku is `sudoku :: Grid -> [Grid]` which does not even convey the fact that the resulting solution should at least be without blank spaces, etc.
+* I've always found the original solution's use of imprecise signatures and type modeling to be somewhat unsatisfactory. For instance, Bird's solution in Haskell employs nested lists [[a]] to represent the grid, leaving room for an inconsistent numbers of entries in each row and/or column; the choice of using `Char` to represent the content also permits all sort of alphanumeric entries in each cell, instead of just allowing single digits from 1 to 9 and blank spaces. Moreover, the method signature for solving Sudoku, `sudoku :: Grid -> [Grid]`, fails to convey the essential requirement that the resulting solution should be free of blank spaces. These aspects indicate a need for a more precise and expressive type system to ensure a clearer and more constrained representation of Sudoku grids and solutions.
 * Agda gives the opportunity to formally verify all the equational reasoning that Bird uses to optimise the solution
 
 ## Compile
@@ -18,7 +18,7 @@ Assuming Agda is available (see Installation section),
 agda --compile sudoku-solver-agda.agda
 ```
 
-The `--compile` flag creates via the GHC backend a binary file in the top-level folder that can be executed:
+The `--compile` flag creates via the GHC backend a binary file in the top-level folder that can be executed using 
 ```bash
 ./sudoku-solver-agda
 ```
