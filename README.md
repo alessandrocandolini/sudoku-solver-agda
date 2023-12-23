@@ -8,7 +8,7 @@ Agda implementation of a simple Sudoku solver using equational reasoning in the 
 ## Why Agda
 
 My personal interest in exploring how to port Bird's ideas to Agda steams from two main reasons:
-* I've always been dissatisfied with the unprecise signatures and type modelling used in the original solution. For example, Bird's solution in Haskell uses generic lists of lists `[[a]]` to represent the grid (leaving room for inconsistent number of lines and columns), it employs `Char` to represent the content (leaving open the possibility to have all sort of alphanumeric content in each cell), the signature of the method to solve the Sudoku is `sudoku :: Grid -> [Grid]` which not even convey the fact that the resulting solution should at least be without blank spaces, etc.
+* I've always been dissatisfied with the unprecise signatures and type modelling used in the original solution. For example, Bird's solution in Haskell uses generic lists of lists `[[a]]` to represent the grid (leaving room for inconsistent number of lines and columns), it employs `Char` to represent the content (leaving open the possibility to have all sort of alphanumeric content in each cell), the signature of the method to solve the Sudoku is `sudoku :: Grid -> [Grid]` which does not even convey the fact that the resulting solution should at least be without blank spaces, etc.
 * Agda gives the opportunity to formally verify all the equational reasoning that Bird uses to optimise the solution
 
 ## Compile
