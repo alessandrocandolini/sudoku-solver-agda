@@ -1,0 +1,12 @@
+*~
+*.swp
+*.swo
+.DS_Store
+# Aux files
+*.o
+*.hi
+*.eventlog
+*.agdai
+MAlonzo
+# Executable name
+sudoku-solver-agda
